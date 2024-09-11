@@ -32,7 +32,8 @@ Surface
   <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.imdb.com
+
+nike.com/nl
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
