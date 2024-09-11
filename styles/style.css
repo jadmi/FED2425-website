@@ -29,3 +29,19 @@
 
 /* jouw code */
 
+nav {
+	display: flex;
+
+}
+
+nav img {
+	width: 1.875em;
+	height: 1.875em;
+	margin: 0.5em;
+}	
+nav img:first-of-type {
+  width: 3.125em;
+  height: 3.125em;
+  margin-right: auto;
+}
+
