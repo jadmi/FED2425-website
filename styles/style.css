@@ -74,7 +74,13 @@ img:first-of-type {
   width: 100%;
 }
 
-section > img {
+article {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+article > img {
   margin: 1em;
   height: 50vh;
 }

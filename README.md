@@ -38,12 +38,12 @@ nike.com/nl
 #### Screenshot(s) van de eerste pagina (small screen):
 
 hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/nike.png" width="375px" alt="nike homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/nike2.png" width="375px" alt="nike productpagina">
 
 </details>
 
@@ -54,7 +54,7 @@ hier de naam van de pagina
 
 ### Bevindingen
 
-Lijst met je bevindingen die in de test naar voren kwamen:
+Ik heb de site als eerst met een windows screenreader getest, maar die vond ik lastig te bedienen dus verliep de test niet zo soepel.
 
 </details>
 
@@ -209,8 +209,8 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. bron 1
-2. bron 2
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+2. Github Copilot - troubleshooting, bijv waarom werkt deze selector niet.
 3. ...
 
 </details>
