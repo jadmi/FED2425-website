@@ -54,7 +54,7 @@ hier de naam van de pagina
 
 ### Bevindingen
 
-Ik heb de site als eerst met een windows screenreader getest, maar die vond ik lastig te bedienen dus verliep de test niet zo soepel.
+Ik heb de site als eerst met een windows screenreader getest, maar die vond ik lastig te bedienen dus verliep de test niet zo soepel. Ik ga het nog een keer testen op mac.
 
 </details>
 
@@ -65,7 +65,7 @@ Ik heb de site als eerst met een windows screenreader getest, maar die vond ik l
 
 ### de hele pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschts.pdf" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
