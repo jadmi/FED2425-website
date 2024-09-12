@@ -84,3 +84,8 @@ article > img {
   margin: 1em;
   height: 50vh;
 }
+
+li img {
+  width: 1.5em;
+  height: 1.3em;
+}
