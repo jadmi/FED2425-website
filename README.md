@@ -88,37 +88,27 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 ### Agenda voor meeting
 
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Algemeen:
 
 Wanneer divs gebruiken?
+Wat zijn de regels rondom div?
 Om de header uit te lijnen zou je dan grid moeten gebruiken?
 Op welke manier krijg je de header die verandert?
 
-Eerste pagina in html gemaakt, nog niet zeker over tweede pagina. In hoeverre zou je een filter systeem moeten maken indien je die pagina gaat maken?
+Persoonlijk: Eerste pagina in html gemaakt, nog niet zeker over tweede pagina. In hoeverre zou je een filter systeem moeten maken indien je die pagina gaat maken?
 
-Wat zijn de regels rondom div? Waarvoor div gebruiken?
-Is de nav met margins of in een grid?
-Zijn het allemaal anchor tags op de pagina? Is de dropdown in de footer ook een anchor?
+Persoonlijk: Is de header nav met margins of in een grid?
 
-Filter systeem
-Productpagina
-
-In hoeverre divjes gebruiken?
-
-Text op afbeelding
-
-Feedback:
-HTML/Code: Netjes, wat je zou kunnen doen is wat meer whitespace toevoegen tussen de sections. Je was al begonnen met de CSS, maar probeer wel minder margins te gebruiken.
+Persoonlijk: Zijn het allemaal anchor tags op de pagina? Is de dropdown in de footer ook een anchor?
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
+
+Feedback:
+HTML/Code: Netjes, wat je zou kunnen doen is wat meer whitespace toevoegen tussen de sections. Je was al begonnen met de CSS, maar probeer wel minder margins te gebruiken.
+
+Vragen beantwoord:
 
 - De nav kan je met flexbox + margin/padding maken
 - Je mag een andere video gebruiken, bijv nike promotie video, misschien screenrecording?
