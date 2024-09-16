@@ -120,10 +120,12 @@ HTML/Code: Netjes, wat je zou kunnen doen is wat meer whitespace toevoegen tusse
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- De nav kan je met flexbox + margin/padding maken
+- Je mag een andere video gebruiken, bijv nike promotie video, misschien screenrecording?
+- Ja andere pagina = anchor
+- Details element voor dropdown icoon
+- Nav classlist
+- Divjes zijn amper nodig op mijn pagina, bijv stukje tekst ene tekst links andere tekst rechts.
 
 </details>
 
