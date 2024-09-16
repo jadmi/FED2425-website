@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "h1Font";
+  src: url("../fonts/NikeFuturaND.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -25,50 +32,54 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav img {
-  width: 1.5em;
-  height: 1.3em;
   margin: 0.5em;
 }
-nav img:first-of-type {
-  width: 5em;
-  height: 5em;
-  margin-right: auto;
-  margin-top: -1.25em;
-}
 
-nav img:last-of-type {
-  margin-right: 2em;
+nav img:first-of-type {
+  max-width: 3em;
+  margin-right: auto;
 }
 
 h1 {
+  font-family: "h1Font";
+  font-size: 2.7em;
   display: flex;
   justify-content: center;
+  text-align: center;
   text-transform: uppercase;
+  line-height: 1em;
 }
 
-p:first-of-type {
-  font-size: 1.2em;
-}
-
-a:first-of-type {
-  display: flex;
-}
-
-header > section:first-of-type {
+header > section {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-headerTwo);
-  margin-top: -0.5em;
+}
+
+p {
+  font-family: "Helvetica", sans-serif;
+}
+
+p:first-of-type {
+  font-size: 1.1em;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4em;
+}
+
+a:first-of-type {
+  font-size: 0.8em;
+  padding-bottom: 0.8em;
 }
 
 img:first-of-type {

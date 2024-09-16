@@ -218,7 +218,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. https://www.flaticon.com voor iconen
+1. https://www.flaticon.com, https://icons8.com voor iconen
 2. https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
 3. Github Copilot - troubleshooting, bijv waarom werkt deze selector niet.
 4. ...
