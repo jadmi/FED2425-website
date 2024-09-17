@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "pFont";
+  font-family: "pFont", "aFont";
   src: url("../fonts/HelveticaNowText-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -67,6 +67,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   line-height: 1em;
+  margin: 1em 1em 0 1em;
 }
 
 h2 {
@@ -87,23 +88,27 @@ p {
 }
 
 p:first-of-type {
-  font-size: 1.1em;
-  margin-top: 0.8rem;
-  margin-bottom: 0.4em;
+  font-size: 1.2em;
   display: flex;
   text-align: center;
 }
 
 a:first-of-type {
-  font-size: 0.8em;
+  font-size: 1em;
   padding-bottom: 0.8em;
+  margin-top: -0.5em;
 }
 
-main a:first-of-type {
-  font-size: 1em;
-  padding: 1em;
+main a:nth-of-type(1) {
+  font-family: "aFont", sans-serif;
+  font-size: 1.1em;
+  padding: 0.5em 1em 0.5em 1em;
   color: var(--color-background);
   background: var(--color-text);
+  display: flex;
+  justify-content: center;
+  margin-top: 0.3em;
+  border-radius: 30px;
 }
 
 img:first-of-type {
@@ -124,4 +129,14 @@ article > img {
 li img {
   width: 1.5em;
   height: 1.3em;
+}
+
+
+
+section:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.3em;
 }
