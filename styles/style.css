@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "pFont", "aFont";
+  font-family: "pFont", "aFont", "h3Font";
   src: url("../fonts/HelveticaNowText-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -39,6 +39,7 @@
 
 body {
   margin: 0;
+  overflow: visible;
 }
 
 nav {
@@ -55,7 +56,7 @@ nav img {
 }
 
 nav img:first-of-type {
-  max-width: 3em;
+  width: 3em;
   margin-right: auto;
 }
 
@@ -70,9 +71,10 @@ h1 {
   margin: 1em 1em 0 1em;
 }
 
-h2 {
+h2,
+h3 {
   font-family: "pFont", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 header > section {
@@ -111,7 +113,7 @@ main a:nth-of-type(1) {
   border-radius: 30px;
 }
 
-section:first-of-type img{
+section:first-of-type img {
   width: 100%;
 }
 
@@ -128,18 +130,37 @@ section:nth-child(1) {
   margin: 1.3em;
 }
 
-
-section:nth-child(2) {
-  display: flex;
-  gap: 1em;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-  scroll-padding: 0 24px;
+section:nth-of-type(2) {
+  margin-top: 3em;
 }
 
-section:nth-child(2) article {
+/* Hulp van Jason met code van carousel en scroll-snap */
+.carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  gap: 0.5em;
+}
+
+.carousel article {
   display: flex;
   flex-direction: column;
-  margin: 1em;
-  width: 500px;
+  margin-left: 1em;
+  min-width: 75%;
+}
+
+.carousel img {
+  height: 100%;
+}
+
+.carousel article:last-of-type {
+  margin-right: 1em;
+}
+
+section:nth-of-type(2) h2 {
+  margin: 0.65em;
+}
+
+section:nth-of-type(3) img {
+  max-width: 100%;
 }
