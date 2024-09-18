@@ -85,6 +85,7 @@ header > section {
   background-color: var(--color-headerTwo);
 }
 
+
 p {
   font-family: "pFont", "Helvetica", sans-serif;
 }
@@ -113,8 +114,8 @@ main a:nth-of-type(1) {
   border-radius: 30px;
 }
 
-section:first-of-type img {
-  width: 100%;
+section:first-of-type video {
+  max-width: 100%;
 }
 
 li img {

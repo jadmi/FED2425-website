@@ -222,6 +222,6 @@ Nb. Vermeld de bronnen ook in je code.
 2. https://developer.mozilla.org/en-US/docs / https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
 3. Github Copilot - troubleshooting, bijv waarom werkt deze selector niet.
    (comments bij desbetreffende code gezet waar copilot de code verbeterd.)
-4. ...
+4. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
 
 </details>
