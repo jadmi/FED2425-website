@@ -154,6 +154,7 @@ section:nth-of-type(2) {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
+  overflow-y: hidden;
   gap: 0.5em;
   position: relative;
 }
