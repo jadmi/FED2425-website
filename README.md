@@ -138,7 +138,7 @@ Hoe zit het met de github images die niet laden
 
 Voor al deze images mag ik een aparte folder maken?
 
-Ik heb nu veel met headers positioneren met margins, moet dan eigenlijk met grid/flex bezig toch?
+Ik heb nu veel met headers positioneren met margins, moet dan eigenlijk met grid/flex bezig toch? - Is nu een soort bandaid fix.
 
 Hoe zit het met tekst op een afbeelding, met positioning?
 
