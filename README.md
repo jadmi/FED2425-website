@@ -126,9 +126,23 @@ Vragen beantwoord:
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ <img src="readme-images/Voortgang-2.png" alt="Pagina status">
+ <img src="readme-images/voortgang2-2.png" alt="code status">
+ <img src="readme-images/voortgang2-3.png" alt="code status">
 
 ### Agenda voor meeting
+
+Waarvoor kan ik nog meer custom properties gebruiken bij mijn code behalve kleur?
+
+Hoe zit het met de github images die niet laden
+
+Voor al deze images mag ik een aparte folder maken?
+
+Ik heb nu veel met headers positioneren met margins, moet dan eigenlijk met grid/flex bezig toch?
+
+Hoe zit het met tekst op een afbeelding, met positioning?
+
+Maakt het uit als de header section geen h element heeft? (info bij w3s check)
 
 ### Verslag van meeting
 
