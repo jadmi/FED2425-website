@@ -144,11 +144,21 @@ Hoe zit het met tekst op een afbeelding, met positioning?
 
 Maakt het uit als de header section geen h element heeft? (info bij w3s check)
 
+In hoeverre hamburgermenu uitwerken?
+
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Antwoord op vragen:
+
+- Voor custom properties: margins, paddings, border radius bijv
+- (zelf proberen)
+- Wat je zelf prefereert, wordt niet naar gekeken.
+- Padding op de hele section zetten.
+- Grid gebruiken voor de laatste carousel
+- Opzich, maak er een h2 van ipv p om het toch te hebben. Volgorde van headings maakt niet uit.
+- 1 menu item laten doorklikken, maken in de nav geneste ul's
 
 </details>
 

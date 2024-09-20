@@ -32,6 +32,14 @@
   --color-backgroundHeader: #eee;
   --color-headerTwo: #f5f5f5;
   --color-h5: #707072;
+  --padding-Section: 3em 0em 0em 1em;
+
+
+  /* --space-s: 1em;
+  --space-m: 2em;
+
+  --radius-s: 1em;
+  --radius-m: 1.5em; */
 }
 
 /****************/
@@ -49,8 +57,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: var(--space-s)
 }
 
 nav img {
@@ -131,7 +138,7 @@ main section:first-of-type a {
   display: flex;
   justify-content: center;
   margin-top: 0.3em;
-  border-radius: 30px;
+  border-radius: var(--radius-m);
 }
 
 .carousel a {
@@ -160,12 +167,20 @@ section:nth-child(1) {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 1.3em;
 }
 
-section:nth-of-type(2) {
+main section {
+  padding: var(--padding-Section)
+}
+
+/* section:nth-of-type(2) {
   margin-top: 3em;
 }
+
+section:nth-of-type(3) {
+  padding-left: 1em;
+  padding-top: 2em;
+} */
 
 /* Hulp van Jason met code van carousel en scroll-snap */
 .carousel {
@@ -173,14 +188,13 @@ section:nth-of-type(2) {
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   overflow-y: hidden;
-  gap: 0.5em;
+  gap: 2em;
   position: relative;
 }
 
 .carousel article {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
   min-width: 75%;
 }
 
@@ -199,18 +213,18 @@ section:nth-of-type(2) {
   width: max-content;
 }
 
-section:nth-of-type(2) h2,
+/* section:nth-of-type(2) h2,
 section:nth-of-type(3) h2 {
   margin-left: 0.65em;
   margin-bottom: 1em;
   margin-top: 1em;
-}
+} */
 
-section:nth-of-type(3) img {
+/* section:nth-of-type(3) img {
   max-width: 100%;
-}
+} */
 
-section:nth-of-type(4) h2 {
+/* section:nth-of-type(4) h2 {
   margin-left: 0.65em;
   margin-bottom: 1em;
   margin-top: 4em;
@@ -224,4 +238,4 @@ section:nth-of-type(6) h2 {
 }
 section:nth-of-type(5) h5 {
   margin: -0.8em 0 -1.2em 0;
-}
+} */
