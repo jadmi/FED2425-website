@@ -45,6 +45,7 @@ img {
   --color-headerTwo: #f5f5f5;
   --color-gray: #707072;
   --padding-Section: 3em 0em 0em 1.5em;
+  --padding-div: 5em 0em 2em 1.5em;
   --margin-h1: 1em 1em 0 1em;
   --padding-Button: 0.5em 1em 0.5em 1em;
   --margin-h5: -1.4em 0 -1.4em 0;
@@ -254,11 +255,16 @@ ul:first-of-type {
   font-size: 1.25em;
   list-style-type: none;
   padding-left: var(--padding-Section);
-}
-
-section li {
   margin: var(--margin-li);
 }
+.main-list {
+  padding: var(--padding-div);
+}
+
+.main-list li {
+  margin: var(--margin-li);
+}
+
 
 footer {
   padding: var(--padding-Footer);
