@@ -30,10 +30,12 @@ const sections = [
 let currentIndex = 0;
 const switchInterval = 3000;
 
-let hasRun = false; // Flag to track if the function has run
+let runCount = 0; // Counter to track the number of runs
 
 function switchSection() {
-  if (hasRun) return; // Exit if the function has already run once
+  if (runCount >= 2) {
+    return; // Exit after running twice
+  }
 
   const currentSection = sections[currentIndex];
   currentIndex++;
@@ -49,7 +51,7 @@ function switchSection() {
 
     setTimeout(() => {
       nextSection.classList.remove("slide-in");
-      hasRun = true; // Set the flag to true after running the function
+      runCount++; // Increment the run counter after each complete run;
     }, 500); // Match this timeout with the slide-in animation duration
   }, 500); // Match this timeout with the slide-out animation duration
 }
