@@ -12,6 +12,7 @@
     <script defer src="scripts/script.js"></script>
   </head>
   <body>
+    <a href="#content" class="skip-link">Skip naar hoofd content</a>
     <header>
       <nav>
         <img src="images/nikelogo.svg" alt="Logo van Nike" />
@@ -35,16 +36,32 @@
         </ul>
         <p>Become dshflasjdfl</p>
       </nav> -->
-      <section>
-        <h2>Shop alle nieuwe producten</h2>
-        <a href="#">Shop</a>
-        <video muted>
-          <source src="videos/nikepromotieHeader.mp4" type="video/mp4" />
-        </video>
-      </section>
+
+      <div class="header-container">
+        <section id="header-1">
+          <h2>Tot 50% korting</h2>
+          <p>De seizoenssale is begonnen. <a href="#">Shop</a></p>
+        </section>
+        <section id="header-2">
+          <h2>Shop alle nieuwe producten</h2>
+          <a href="#">Shop</a>
+        </section>
+        <section id="header-3">
+          <h2>Gratis verzending en retourneren</h2>
+          <p>
+            Nike members krijgen gratis verzending en kunnen binnen 30-dagen
+            gratis retourneren.
+            <a href="#">Meer info</a>
+            <a href="#">Join us</a>
+          </p>
+        </section>
+      </div>
+      <video muted>
+        <source src="videos/nikepromotieHeader.mp4" type="video/mp4" />
+      </video>
     </header>
 
-    <main>
+    <main id="content">
       <section>
         <h1>verspil je energie niet</h1>
         <p>
@@ -59,6 +76,7 @@
         <div class="carousel">
           <article>
             <img src="images/nikeSlide1.jpg" alt="Nike tech geweven pak" />
+            <!-- <a href="productPagina.html"><img src="images/nikeSlide1.jpg" alt="Nike Tech geweven pak" /></a> -->
             <h3>Nike Tech Geweven Pak</h3>
           </article>
           <article>
