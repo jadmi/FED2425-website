@@ -235,9 +235,8 @@ Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
 1. https://www.flaticon.com, https://icons8.com voor iconen
-2. https://developer.mozilla.org/en-US/docs / https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
-3. Github Copilot - troubleshooting, bijv waarom werkt deze selector niet.
-   (comments bij desbetreffende code gezet waar copilot de code verbeterd.)
-4. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+2. https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+3. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+4. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#skip_links
 
 </details>
