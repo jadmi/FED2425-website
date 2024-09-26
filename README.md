@@ -187,17 +187,16 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 ### Stand van zaken
 
+- Rest van css uitwerken ging goed
+- Animatie maken was lastig, nog niet helemaal af.
+
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 ### Agenda voor meeting
 
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+- Hoe werkt het grid op afbeeldingen?
+- Enig idee hoe ik de header animatie kan resetten?
+- Voor alle margins en paddings variabelen gebruiken?
 
 ### Verslag van meeting
 
