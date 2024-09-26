@@ -1,4 +1,8 @@
 // Hulp van chatgpt, zelf verder mee gegaan en aangepast. Zie "chatgpt-bewegendeheader" voor chat gpt gesprek, alleen de eerste kwart van het gesprek is relevant / deels gebruikt.
+
+
+// https://chatgpt.com/share/66f4a34c-a378-8002-b5d8-a0c5f356ec70 voor deel 2 van de chat (animaties)
+
 // const sections = [
 //   document.getElementById("header-1"),
 //   document.getElementById("header-2"),
@@ -30,11 +34,11 @@ const sections = [
 let currentIndex = 0;
 const switchInterval = 3000;
 
-let runCount = 0; // Counter to track the number of runs
+let aantalKeer = 0; 
 
 function switchSection() {
-  if (runCount >= 2) {
-    return; // Exit after running twice
+  if (aantalKeer >= 2) {
+    return;
   }
 
   const currentSection = sections[currentIndex];
@@ -51,9 +55,9 @@ function switchSection() {
 
     setTimeout(() => {
       nextSection.classList.remove("slide-in");
-      runCount++; // Increment the run counter after each complete run;
-    }, 500); // Match this timeout with the slide-in animation duration
-  }, 500); // Match this timeout with the slide-out animation duration
+      aantalKeer++; 
+    }, 500); 
+  }, 500); 
 }
 
 setInterval(switchSection, switchInterval);

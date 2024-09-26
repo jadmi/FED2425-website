@@ -171,6 +171,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+- Alle images hebben alt tekst, image wordt dus voorgelezen
+- Screenreader werkt goed, iconen hebben ook een beschrijving, je kan door alles tabben.
+
+- Alleen ze zeggen wel dat de buttons zijn opgemaakt als tekst, Kom er nu achter dat anchor tags geen href hebben, dus dat moet ik nog toevoegen. In de vorm van # of naar andere hol pagina linken
+- Focus states voor klikbare elementen, anchors, details (:focus)
+- Skip link toevoegen
+
 </details>
 
 ## Voortgang 3 (week 4)
