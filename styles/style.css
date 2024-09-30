@@ -82,7 +82,8 @@ video {
 .skip-link {
   position: absolute;
   top: -3em;
-  background: #fff;
+  background: black;
+  color: white;
 }
 .skip-link:focus {
   top: 0;
@@ -112,7 +113,7 @@ nav img:first-of-type {
 }
 
 .header-container {
-  background-color: var(--color-headerTwo);
+  background-color: var(--color-headerTwo)
 }
 
 a:focus {
