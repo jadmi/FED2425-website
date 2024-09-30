@@ -84,6 +84,7 @@ video {
   top: -3em;
   background: var(--color-buttonType1);
   color: var(--color-buttonType2);
+  padding: 0.5em;
 }
 .skip-link:focus {
   top: 0;
