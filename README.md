@@ -254,5 +254,8 @@ Nb. Vermeld de bronnen ook in je code.
 6. chatGPT, gebruikt 1. Troubleshooting/uitleg algemeen 2. bewegende header Zie "chatgpt-bewegendeheader"
 7. https://www.shecodes.io/athena/9754-how-to-create-a-dropdown-button-in-javascript
 8. Copilot, hier en daar autosuggest
+9. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role
+10. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion#user_preferences
+11. https://web.dev/articles/prefers-reduced-motion
 
 </details>

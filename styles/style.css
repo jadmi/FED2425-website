@@ -1,8 +1,6 @@
 @font-face {
   font-family: "h1Font";
   src: url("../fonts/Nike-Futura.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
@@ -58,8 +56,10 @@ video {
   --line-divMargin: 4em;
   --font-a: "aFont", Helvetica, Arial, sans-serif;
   --font-h2: "h2Font", Helvetica, Arial, sans-serif;
+  --font-p: "pFont", Helvetica, Arial, sans-serif;
   --font-sizeAlgemeen: 0.875em;
-  --font-weight: 500;
+  --font-weight-standaard: 500;
+  --font-weight-h5: 400;
   --margin-a: 0.3em 0em 0em 0em;
   --margin-0: 0;
   --border-footer: 1px solid #eaeaea;
@@ -115,6 +115,8 @@ nav img:first-of-type {
 
 .header-container {
   background-color: var(--color-headerTwo);
+  width: 100vw;
+  height: 8.5vh;
 }
 
 a:focus {
@@ -122,13 +124,13 @@ a:focus {
 }
 
 #header-2 a {
-  font-family: "aFont";
+  font-family: var(--font-a);
   font-size: 0.75em;
   color: #111;
 }
 
 .header-container h2 {
-  font-family: "pFont";
+  font-family: var(--font-p);
   font-size: var(--em-universeel);
 }
 
@@ -156,6 +158,10 @@ a:focus {
 #header-3 p {
   margin: var(--margin-header);
   line-height: 1.9em;
+}
+
+#header-3 h2 {
+  margin-top: 0.1em;
 }
 
 #header-3 a {
@@ -241,7 +247,7 @@ header h2 {
 h2,
 h3 {
   font-family: var(--font-h2);
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-standaard);
 }
 
 h3 {
@@ -252,18 +258,18 @@ h4,
 h6 {
   font-family: var(--font-a);
   font-size: var(--font-sizeAlgemeen);
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-standaard);
 }
 
 h5 {
   color: var(--color-gray);
   font-family: var(--font-a);
   font-size: var(--font-sizeAlgemeen);
-  font-weight: 400;
+  font-weight: var(--font-weight-h5);
 }
 
 p {
-  font-family: "pFont", "Helvetica", sans-serif;
+  font-family: var(--font-p);
 }
 
 main section:first-of-type a,
@@ -368,7 +374,7 @@ section:nth-of-type(5) h5 {
 }
 
 ul:first-of-type {
-  font-family: "pFont", sans-serif;
+  font-family: var(--font-p);
   font-size: 1.25em;
   list-style-type: none;
   padding-left: var(--padding-Section);
@@ -390,7 +396,7 @@ footer ul {
   font-family: var(--font-h2);
   list-style-type: none;
   margin: var(--margin-li);
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-standaard);
   padding: 0;
   margin: var(--margin-0);
 }
@@ -476,8 +482,8 @@ button {
 ul .details,
 .details-2,
 .details-3 {
-  font-family: "pFont", sans-serif;
-  font-weight: var(--font-weight);
+  font-family: var(--font-p);
+  font-weight: var(--font-weight-standaard);
   list-style-type: none;
   padding-left: var(--padding-Section);
   color: var(--color-gray);
@@ -503,4 +509,13 @@ footer ul:first-of-type li:nth-of-type(6) ul li {
   border: none;
   margin-bottom: var(--margin2-list);
   padding-top: var(--padding-list);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .draaiAnimatie,
+  .draaiTerugAnimatie,
+  .slide-in,
+  .slide-out {
+    animation-duration: 2s;
+  }
 }
