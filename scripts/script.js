@@ -49,7 +49,14 @@ const switchInterval = 5000;
 
 let runCount = 0; // bijhouden hoevaak de functie is uitgevoerd
 
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  timeoutTijd = 2000;
+} else {
+  timeoutTijd = 500;
+}
+
 function switchSection() {
+  console.log(timeoutTijd);
   if (runCount >= 2) {
     return; // Stop de functie na 2x uitvoeren
   }
@@ -68,8 +75,8 @@ function switchSection() {
     setTimeout(() => {
       nextSection.classList.remove("slide-in");
       runCount++;
-    }, 500);
-  }, 500);
+    }, timeoutTijd);
+  }, timeoutTijd);
 }
 
 setInterval(switchSection, switchInterval);
