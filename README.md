@@ -171,6 +171,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+- Alle images hebben alt tekst, image wordt dus voorgelezen
+- Screenreader werkt goed, iconen hebben ook een beschrijving, je kan door alles tabben.
+
+- Alleen ze zeggen wel dat de buttons zijn opgemaakt als tekst, Kom er nu achter dat anchor tags geen href hebben, dus dat moet ik nog toevoegen. In de vorm van # of naar andere hol pagina linken
+- Focus states voor klikbare elementen, anchors, details (:focus)
+- Skip link toevoegen
+
 </details>
 
 ## Voortgang 3 (week 4)
@@ -180,17 +187,16 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 ### Stand van zaken
 
+- Rest van css uitwerken ging goed
+- Animatie maken was lastig, nog niet helemaal af.
+
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 ### Agenda voor meeting
 
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+- Hoe werkt het grid op afbeeldingen?
+- Enig idee hoe ik de header animatie kan resetten?
+- Voor alle margins en paddings variabelen gebruiken?
 
 ### Verslag van meeting
 
