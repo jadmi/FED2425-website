@@ -4,6 +4,7 @@
 const buttons = document.querySelectorAll("button");
 const ul = document.querySelector(".details");
 const ul2 = document.querySelector(".details-2");
+const ul3 = document.querySelector(".details-3");
 
 // array aanmaken met de 3 headers
 const sections = [
@@ -18,6 +19,8 @@ buttons.forEach((button, index) => {
       ul.classList.toggle("show");
     } else if (index == 1) {
       ul2.classList.toggle("show");
+    } else {
+      ul3.classList.toggle("show");
     }
 
     if (this.classList.contains("draaiAnimatie")) {
