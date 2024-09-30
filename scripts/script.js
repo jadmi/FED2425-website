@@ -1,54 +1,47 @@
-// hulp chatgpt + site
-// https://chatgpt.com/share/66f8aef3-8310-8002-89ad-1c23c1328533
+// Hulp van chatgpt, zelf verder mee gegaan en aangepast. Zie "chatgpt-bewegendeheader" voor chat gpt gesprek, alleen de eerste kwart van het gesprek is relevant / deels gebruikt.
+// const sections = [
+//   document.getElementById("header-1"),
+//   document.getElementById("header-2"),
+//   document.getElementById("header-3"),
+// ];
 
-const buttons = document.querySelectorAll("button");
-const ul = document.querySelector(".details");
-const ul2 = document.querySelector(".details-2");
+// let currentIndex = 0;
+// const switchInterval = 2000;
 
-// array aanmaken met de 3 headers
+// function switchSection() {
+//   sections[currentIndex].style.display = "none";
+//   currentIndex++;
+
+//   if (currentIndex >= 3) {
+//     currentIndex = 0;
+//   }
+
+//   sections[currentIndex].style.display = "flex";
+// }
+
+// setInterval(switchSection, switchInterval);
+
 const sections = [
   document.getElementById("header-1"),
   document.getElementById("header-2"),
   document.getElementById("header-3"),
 ];
 
-buttons.forEach((button, index) => {
-  button.addEventListener("click", function () {
-    if (index == 0) {
-      ul.classList.toggle("show");
-    } else if (index == 1) {
-      ul2.classList.toggle("show");
-    }
-
-    if (this.classList.contains("draaiAnimatie")) {
-      this.classList.remove("draaiAnimatie");
-      this.classList.add("draaiTerugAnimatie");
-    } else {
-      this.classList.add("draaiAnimatie");
-      this.classList.remove("draaiTerugAnimatie");
-    }
-  });
-});
-
-// Hulp van chatgpt, zelf verder mee gegaan en aangepast. Zie "chatgpt-bewegendeheader" voor chat gpt gesprek, alleen de eerste kwart van het gesprek is relevant / deels gebruikt.
-
-// index van array bijhouden
 let currentIndex = 0;
+const switchInterval = 3000;
 
-// de tijd dat de header blijft staan aangeven
-const switchInterval = 5000;
-
-let runCount = 0; // bijhouden hoevaak de functie is uitgevoerd
+let runCount = 0; // Counter to track the number of runs
 
 function switchSection() {
   if (runCount >= 2) {
-    return; // Stop de functie na 2x uitvoeren
+    return; // Exit after running twice
   }
 
   const currentSection = sections[currentIndex];
   currentIndex++;
 
   const nextSection = sections[currentIndex];
+
   currentSection.classList.add("slide-out");
 
   setTimeout(() => {
@@ -58,9 +51,9 @@ function switchSection() {
 
     setTimeout(() => {
       nextSection.classList.remove("slide-in");
-      runCount++;
-    }, 500);
-  }, 500);
+      runCount++; // Increment the run counter after each complete run;
+    }, 500); // Match this timeout with the slide-in animation duration
+  }, 500); // Match this timeout with the slide-out animation duration
 }
 
 setInterval(switchSection, switchInterval);

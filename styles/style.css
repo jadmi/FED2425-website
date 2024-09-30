@@ -63,13 +63,6 @@ video {
   --margin-a: 0.3em 0em 0em 0em;
   --border-footer: 1px solid #eaeaea;
   --margin-header: -1.2em 1em 1em 1em;
-  --fontsize-headers: 0.8em;
-  --general-size: 1.3em;
-  --gap: 0.5em;
-  --button: 2.7em;
-  --margin-list: -3em;
-  --margin2-list: 0em 0em -1em 0em;
-  --padding-list: 1em 0em 0em 0em;
 }
 
 /****************/
@@ -99,8 +92,8 @@ nav {
 }
 
 nav img {
-  margin: var(--gap);
-  width: var(--general-size);
+  margin: 0.5em;
+  width: 1.3em;
 }
 
 nav img:first-of-type {
@@ -135,16 +128,12 @@ nav img:first-of-type {
 
 #header-2 a,
 #header-3 a {
-  padding-bottom: var(--fontsize-headers);
+  padding-bottom: 0.8em;
   margin-top: -0.7em;
 }
 
-#header-1 p,
 #header-3 p {
-  font-size: var(--fontsize-headers);
-}
-
-#header-3 p {
+  font-size: 0.8em;
   margin: var(--margin-header);
   line-height: 1.9em;
 }
@@ -159,6 +148,7 @@ nav img:first-of-type {
 }
 
 #header-1 p {
+  font-size: 0.8em;
   margin-top: -1em;
 }
 
@@ -281,7 +271,7 @@ main section:first-of-type a {
 
 li img {
   width: 1.5em;
-  height: var(--general-size);
+  height: 1.3em;
 }
 
 main section {
@@ -293,7 +283,8 @@ main section {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
-  gap: 1em;
+  overflow-y: hidden;
+  gap: 2em;
   position: relative;
 }
 
@@ -316,10 +307,26 @@ main section {
   text-decoration: none;
 }
 
+.carousel .grid-a {
+  position: static;
+  margin: 0;
+}
+
+.carousel-grid h2 {
+  max-width: 80%;
+  font-size: 1.3em;
+}
+
+.carousel-grid h3 {
+  font-size: 1em;
+  margin-bottom: -0.5em;
+}
+
 /* Met hulp van Jason, Danny */
 
-section:nth-of-type(7) article {
+section:nth-of-type(7) article:first-of-type {
   display: grid;
+  grid-template-columns: 1fr;
 }
 
 section:nth-of-type(7) article img {
@@ -328,30 +335,10 @@ section:nth-of-type(7) article img {
 }
 
 .carousel-grid {
-  grid-row: 2;
-  grid-column: 1;
+  grid-row: 2 / 2;
+  grid-column: 1 / 1;
   padding: 1.2em;
   color: var(--color-headerTwo);
-}
-
-.carousel .grid-a {
-  position: static;
-  margin: 0;
-}
-
-.carousel-grid h2 {
-  max-width: 80%;
-  font-size: var(--general-size);
-}
-
-.carousel-grid h3 {
-  font-size: 1em;
-  margin-bottom: -0.5em;
-}
-
-.flex-positie {
-  display: flex;
-  gap: var(--gap);
 }
 
 section:nth-of-type(5) h5 {
@@ -405,7 +392,7 @@ footer ul:first-of-type li:first-of-type {
 footer ul li:last-child {
   justify-content: left;
   align-items: center;
-  gap: var(--gap);
+  gap: 0.5em;
   color: var(--color-gray);
 }
 
@@ -428,67 +415,4 @@ footer ul:nth-of-type(2) li {
 
 footer ul:nth-of-type(2) li:nth-of-type(2) {
   display: flex;
-}
-
-@keyframes draaien {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes terugDraaien {
-  from {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-.draaiAnimatie {
-  animation: draaien 0.5s forwards;
-}
-
-.draaiTerugAnimatie {
-  animation: terugDraaien 0.5s forwards;
-}
-
-button {
-  background-image: url("../images/dropdown.svg");
-  width: var(--button);
-  height: var(--button);
-  border: hidden;
-  background-color: transparent;
-}
-
-ul .details,
-.details-2 {
-  font-family: "pFont", sans-serif;
-  font-weight: var(--font-weight);
-  list-style-type: none;
-  padding-left: var(--padding-Section);
-  color: var(--color-gray);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease-out;
-}
-
-ul .show {
-  max-height: 50vh;
-}
-
-footer ul:first-of-type li:nth-of-type(2),
-footer ul:first-of-type li:nth-of-type(4) {
-  border: none;
-  margin-bottom: var(--margin-list);
-}
-
-footer ul:first-of-type li:nth-of-type(2) ul li,
-footer ul:first-of-type li:nth-of-type(4) ul li {
-  border: none;
-  margin-bottom: var(--margin2-list);
-  padding-top: var(--padding-list);
 }
