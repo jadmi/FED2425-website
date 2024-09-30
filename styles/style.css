@@ -283,6 +283,14 @@ main section:first-of-type a,
   text-decoration: none;
 }
 
+  section:nth-of-type(2) .carousel:first-of-type a:first-of-type {
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: var(--margin-0);
+}
+
 main section:first-of-type a {
   color: var(--color-buttonType2);
   background: var(--color-buttonType1);
