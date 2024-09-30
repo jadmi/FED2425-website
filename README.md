@@ -202,10 +202,9 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Er stond nog een display flex op de parent dus grid werkte niet
+- Mogelijk een reset of iets in de functie maar weten ze niet echt.
+- Wanneer je het meerdere keren gebruikt wel
 
 </details>
 
@@ -244,5 +243,9 @@ Nb. Vermeld de bronnen ook in je code.
 2. https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
 3. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
 4. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#skip_links
+5. https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element
+6. chatGPT, gebruikt 1. Troubleshooting/uitleg algemeen 2. bewegende header Zie "chatgpt-bewegendeheader"
+7. https://www.shecodes.io/athena/9754-how-to-create-a-dropdown-button-in-javascript
+8. Copilot, hier en daar autosuggest
 
 </details>
