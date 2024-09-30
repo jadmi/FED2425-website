@@ -82,8 +82,8 @@ video {
 .skip-link {
   position: absolute;
   top: -3em;
-  background: black;
-  color: white;
+  background: var(--color-buttonType1);
+  color: var(--color-buttonType2);
 }
 .skip-link:focus {
   top: 0;
@@ -113,7 +113,7 @@ nav img:first-of-type {
 }
 
 .header-container {
-  background-color: var(--color-headerTwo)
+  background-color: var(--color-headerTwo);
 }
 
 a:focus {
