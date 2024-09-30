@@ -23,6 +23,12 @@ buttons.forEach((button, index) => {
       ul3.classList.toggle("show");
     }
 
+    if (ul.classList.contains("show")) {
+      ul.setAttribute("aria-hidden", "false");
+    } else {
+      ul.setAttribute("aria-hidden", "true");
+    }
+
     if (this.classList.contains("draaiAnimatie")) {
       this.classList.remove("draaiAnimatie");
       this.classList.add("draaiTerugAnimatie");
