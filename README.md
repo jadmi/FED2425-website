@@ -56,6 +56,10 @@ hier de naam van de pagina
 
 Ik heb de site als eerst met een windows screenreader getest, maar die vond ik lastig te bedienen dus verliep de test niet zo soepel. Ik ga het nog een keer testen op mac.
 
+Mac toegankelijkheids test bevindingen:
+
+-
+
 </details>
 
 ## Breakdownschets (week 1)
@@ -174,8 +178,8 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 - Alle images hebben alt tekst, image wordt dus voorgelezen
 - Screenreader werkt goed, iconen hebben ook een beschrijving, je kan door alles tabben.
 
-- Alleen ze zeggen wel dat de buttons zijn opgemaakt als tekst, Kom er nu achter dat anchor tags geen href hebben, dus dat moet ik nog toevoegen. In de vorm van # of naar andere hol pagina linken
-- Focus states voor klikbare elementen, anchors, details (:focus)
+- Alleen ze zeggen wel dat de buttons zijn opgemaakt als tekst, Kom er nu achter dat anchor tags geen href hebben, dus dat moet ik nog toevoegen. In de vorm van # of naar andere pagina linken
+- Nog geen focus states voor klikbare elementen, anchors, details (:focus)
 - Skip link toevoegen
 
 </details>
@@ -257,5 +261,6 @@ Nb. Vermeld de bronnen ook in je code.
 9. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role
 10. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion#user_preferences
 11. https://web.dev/articles/prefers-reduced-motion
+12. reduced motion, aria label https://chatgpt.com/c/66fa7254-8f20-8002-94a0-07da51a161d0
 
 </details>
