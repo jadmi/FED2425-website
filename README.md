@@ -59,9 +59,12 @@ Ik heb de site als eerst met een windows screenreader getest, maar die vond ik l
 Mac toegankelijkheids test bevindingen:
 
 - Skip link naar main content
-- Focus state op anchors, blauwe border, aka beter, mogelijk voor contrast?
+- Focus state op anchors, blauwe border, kan beter, mogelijk voor contrast? - - Focus state matcht niet persee website visueel gezien
 - Goede alt tekst, ook op icons, etc. Ook hidden lists hidden voor screenreader
-- Nu nog niks op aan te merken
+- Aria label op anchor links wanneer het een image is
+- Media autoplayt
+- Goed contrast algemeen, zwart op wit/wit op zwart
+- Reduce motion op animatie
 
 </details>
 
@@ -182,8 +185,9 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 - Screenreader werkt goed, iconen hebben ook een beschrijving, je kan door alles tabben.
 
 - Alleen ze zeggen wel dat de buttons zijn opgemaakt als tekst, Kom er nu achter dat anchor tags geen href hebben, dus dat moet ik nog toevoegen. In de vorm van # of naar andere pagina linken
-- Nog geen focus states voor klikbare elementen, anchors, details (:focus)
+- Nog geen focus states voor klikbare elementen, anchors, buttons (:focus)
 - Skip link toevoegen
+- Reduced motion
 
 </details>
 
