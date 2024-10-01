@@ -1,4 +1,4 @@
-// hulp chatgpt + site
+// hulp chatgpt met buttons etc
 // https://chatgpt.com/share/66f8aef3-8310-8002-89ad-1c23c1328533
 
 const buttons = document.querySelectorAll("button");
