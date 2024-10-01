@@ -58,7 +58,10 @@ Ik heb de site als eerst met een windows screenreader getest, maar die vond ik l
 
 Mac toegankelijkheids test bevindingen:
 
--
+- Skip link naar main content
+- Focus state op anchors, blauwe border, aka beter, mogelijk voor contrast?
+- Goede alt tekst, ook op icons, etc. Ook hidden lists hidden voor screenreader
+- Nu nog niks op aan te merken
 
 </details>
 
