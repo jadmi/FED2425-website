@@ -88,7 +88,7 @@ video {
 }
 .skip-link:focus {
   top: 0;
-  margin: 1em;
+  margin: var(--em-universeel);
 }
 
 body {
@@ -119,7 +119,8 @@ nav img:first-of-type {
   height: 8.5vh;
 }
 
-a:focus {
+a:focus,
+button:focus {
   scale: 1.2;
 }
 
@@ -283,7 +284,7 @@ main section:first-of-type a,
   text-decoration: none;
 }
 
-  section:nth-of-type(2) .carousel:first-of-type a:first-of-type {
+section:nth-of-type(2) .carousel:first-of-type a:first-of-type {
   margin-left: auto;
   position: relative;
   width: 100%;
