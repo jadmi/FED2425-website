@@ -113,6 +113,42 @@ nav img:first-of-type {
   margin-right: auto;
 }
 
+nav button {
+  background-image: url("../images/burger-menu.svg");
+  border: none;
+  width: 1.8em;
+  margin: var(--gap);
+  background-size: 100% 100%;
+}
+
+nav button:nth-of-type(2) {
+  background-image: url("../images/cross.svg");
+  align-self: end;
+}
+
+.openMenu button:first-of-type {
+  display: none;
+}
+
+nav:nth-of-type(2) {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  background-color: var(--color-buttonType2);
+}
+
+nav:nth-of-type(2):not(.openMenu) {
+  transform: translateX(100%);
+}
+
+nav:nth-of-type(2).openMenu {
+  transform: translateX(0);
+}
+
 .header-container {
   background-color: var(--color-headerTwo);
   width: 100vw;
@@ -525,6 +561,6 @@ footer ul:first-of-type li:nth-of-type(6) ul li {
   .draaiTerugAnimatie,
   .slide-in,
   .slide-out {
-    animation-duration: 2s;
+    animation-duration: 0s;
   }
 }

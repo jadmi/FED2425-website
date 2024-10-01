@@ -1,10 +1,17 @@
 // hulp chatgpt met buttons etc
 // https://chatgpt.com/share/66f8aef3-8310-8002-89ad-1c23c1328533
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll("footer button");
 const ul = document.querySelector(".details");
 const ul2 = document.querySelector(".details-2");
 const ul3 = document.querySelector(".details-3");
+const tweedeNav = document.querySelector("nav:nth-of-type(2)");
+
+const openButton = document
+  .querySelector("nav > button")
+  .addEventListener("click", function () {
+    tweedeNav.classList.add("openMenu");
+  });
 
 // array aanmaken met de 3 headers
 const sections = [
@@ -50,15 +57,14 @@ const switchInterval = 5000;
 let runCount = 0; // bijhouden hoevaak de functie is uitgevoerd
 
 if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  timeoutTijd = 2000;
+  timeoutTijd = 0;
 } else {
   timeoutTijd = 500;
 }
 
 function switchSection() {
-  console.log(timeoutTijd);
-  if (runCount >= 2) {
-    return; // Stop de functie na 2x uitvoeren
+  if (runCount >= 2 || tweedeNav.classList.contains("openMenu")) {
+    return; // Stop de functie na 2x uitvoeren of wanneer hamburger open is
   }
 
   const currentSection = sections[currentIndex];

@@ -183,6 +183,7 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 - Alle images hebben alt tekst, image wordt dus voorgelezen
 - Screenreader werkt goed, iconen hebben ook een beschrijving, je kan door alles tabben.
+  -HTML valid
 
 - Alleen ze zeggen wel dat de buttons zijn opgemaakt als tekst, Kom er nu achter dat anchor tags geen href hebben, dus dat moet ik nog toevoegen. In de vorm van # of naar andere pagina linken
 - Nog geen focus states voor klikbare elementen, anchors, buttons (:focus)
@@ -243,7 +244,7 @@ Korte omschrijving met plaatjes
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatjes
+- Animatie, animatie laten loopen
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -269,5 +270,6 @@ Nb. Vermeld de bronnen ook in je code.
 10. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion#user_preferences
 11. https://web.dev/articles/prefers-reduced-motion
 12. reduced motion, aria label https://chatgpt.com/c/66fa7254-8f20-8002-94a0-07da51a161d0
+13. https://codepen.io/shooft/pen/VwJXNEg / https://chatgpt.com/c/66fb96a0-3a4c-8002-b45c-9f99aa92b5ba
 
 </details>
