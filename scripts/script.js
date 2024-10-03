@@ -8,16 +8,24 @@ const ul3 = document.querySelector(".details-3");
 const tweedeNav = document.querySelector("nav:nth-of-type(2)");
 
 const openButton = document
-  .querySelector("nav > button")
+  .querySelector("nav button")
   .addEventListener("click", function () {
     tweedeNav.classList.add("openMenu");
+    tweedeNav.classList.remove("closeMenu");
+  });
+
+const closeButton = document
+  .querySelector("nav:nth-of-type(2) button")
+  .addEventListener("click", function () {
+    tweedeNav.classList.remove("openMenu");
+    tweedeNav.classList.add("closeMenu");
   });
 
 // array aanmaken met de 3 headers
 const sections = [
-  document.getElementById("header-1"),
-  document.getElementById("header-2"),
-  document.getElementById("header-3"),
+  document.querySelector(".header-1"),
+  document.querySelector(".header-2"),
+  document.querySelector(".header-3"),
 ];
 
 buttons.forEach((button, index) => {
@@ -77,7 +85,6 @@ function switchSection() {
     currentSection.style.display = "none";
     nextSection.style.display = "flex";
     nextSection.classList.add("slide-in");
-
     setTimeout(() => {
       nextSection.classList.remove("slide-in");
       runCount++;

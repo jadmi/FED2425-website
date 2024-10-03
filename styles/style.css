@@ -72,6 +72,9 @@ video {
   --margin2-list: 0em 0em -1em 0em;
   --padding-list: 1em 0em 0em 0em;
   --em-universeel: 1em;
+  --margin-menu: 1.5em 1.8em 0em 0em;
+  --margin-navul: 1em 0em 1.5em 1.8em;
+  --margin-navul: 1.5em 0em 1.5em 1.8em;
 }
 
 /****************/
@@ -121,13 +124,12 @@ nav button {
   background-size: 100% 100%;
 }
 
-nav button:nth-of-type(2) {
+.openMenu button,
+.closeMenu button {
   background-image: url("../images/cross.svg");
   align-self: end;
-}
-
-.openMenu button:first-of-type {
-  display: none;
+  width: 1.3em;
+  margin: var(--margin-menu);
 }
 
 nav:nth-of-type(2) {
@@ -137,16 +139,54 @@ nav:nth-of-type(2) {
   width: 80vw;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease;
   background-color: var(--color-buttonType2);
+  transform: translateX(-100vw);
 }
 
-nav:nth-of-type(2):not(.openMenu) {
-  transform: translateX(100%);
+nav:nth-of-type(2).openMenu,
+.closeMenu {
+  display: flex;
+  align-items: start;
+  animation: slideInRight 0.35s forwards;
 }
 
-nav:nth-of-type(2).openMenu {
-  transform: translateX(0);
+nav:nth-of-type(2).closeMenu {
+  animation: slideOutRight 0.35s backwards;
+}
+
+nav:nth-of-type(2) ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: var(--margin-navul);
+  width: 100%;
+}
+
+nav:nth-of-type(2) ul .navbutton {
+  background-image: url("../images/pijl-right.svg");
+  width: var(--button);
+  height: var(--button);
+  border: hidden;
+  background-color: transparent;
+  margin: var(--margin-0);
+}
+
+nav:nth-of-type(2) ul li {
+  font-family: var(--font-h2);
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2.15em;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
 
 .header-container {
@@ -160,7 +200,7 @@ button:focus {
   scale: 1.2;
 }
 
-#header-2 a {
+.header-2 a {
   font-family: var(--font-a);
   font-size: 0.75em;
   color: #111;
@@ -171,9 +211,9 @@ button:focus {
   font-size: var(--em-universeel);
 }
 
-#header-2,
-#header-3,
-#header-1 {
+.header-2,
+.header-3,
+.header-1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -181,44 +221,44 @@ button:focus {
   align-items: center;
 }
 
-#header-2 a,
-#header-3 a {
+.header-2 a,
+.header-3 a {
   padding-bottom: var(--fontsize-headers);
   margin-top: -0.7em;
 }
 
-#header-1 p,
-#header-3 p {
+.header-1 p,
+.header-3 p {
   font-size: var(--fontsize-headers);
 }
 
-#header-3 p {
+.header-3 p {
   margin: var(--margin-header);
   line-height: 1.9em;
 }
 
-#header-3 h2 {
+.header-3 h2 {
   margin-top: 0.1em;
 }
 
-#header-3 a {
+.header-3 a {
   font-weight: bold;
 }
 
-#header-3 a,
-#header-1 a {
+.header-3 a,
+.header-1 a {
   color: var(--color-text);
 }
 
-#header-1 p {
+.header-1 p {
   margin-top: -1em;
 }
 
-#header-2 {
+.header-2 {
   display: none;
 }
 
-#header-3 {
+.header-3 {
   display: none;
 }
 
