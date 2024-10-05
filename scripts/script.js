@@ -14,12 +14,12 @@ const openButton = document
     tweedeNav.classList.remove("closeMenu");
   });
 
-const closeButton = document
-  .querySelector("nav:nth-of-type(2) button")
-  .addEventListener("click", function () {
-    tweedeNav.classList.remove("openMenu");
-    tweedeNav.classList.add("closeMenu");
-  });
+// const closeButton = document
+//   .querySelector("nav:nth-of-type(2) button")
+//   .addEventListener("click", function () {
+//     tweedeNav.classList.remove("openMenu");
+//     tweedeNav.classList.add("closeMenu");
+//   });
 
 // array aanmaken met de 3 headers
 const sections = [
@@ -71,7 +71,7 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 }
 
 function switchSection() {
-  if (runCount >= 2 || tweedeNav.classList.contains("openMenu")) {
+  if (runCount >= 2 /* || tweedeNav.classList.contains("openMenu") */) {
     return; // Stop de functie na 2x uitvoeren of wanneer hamburger open is
   }
 
