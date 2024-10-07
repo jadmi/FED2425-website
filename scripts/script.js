@@ -6,6 +6,26 @@ const ul = document.querySelector(".details");
 const ul2 = document.querySelector(".details-2");
 const ul3 = document.querySelector(".details-3");
 const tweedeNav = document.querySelector("nav:nth-of-type(2)");
+const arrow = document.querySelector(".arrow-icon");
+
+const details = document
+  .querySelector(".details-toggle")
+  .addEventListener("toggle", function () {
+    if (arrow.classList.contains("draaiAnimatie")) {
+      arrow.classList.remove("draaiAnimatie");
+      arrow.classList.add("draaiTerugAnimatie");
+    } else {
+      arrow.classList.add("draaiAnimatie");
+      arrow.classList.remove("draaiTerugAnimatie");
+    }
+  });
+
+// array aanmaken met de 3 headers
+const sections = [
+  document.querySelector(".header-1"),
+  document.querySelector(".header-2"),
+  document.querySelector(".header-3"),
+];
 
 const openButton = document
   .querySelector("nav button")
@@ -20,13 +40,6 @@ const openButton = document
 //     tweedeNav.classList.remove("openMenu");
 //     tweedeNav.classList.add("closeMenu");
 //   });
-
-// array aanmaken met de 3 headers
-const sections = [
-  document.querySelector(".header-1"),
-  document.querySelector(".header-2"),
-  document.querySelector(".header-3"),
-];
 
 buttons.forEach((button, index) => {
   button.addEventListener("click", function () {
