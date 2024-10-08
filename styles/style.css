@@ -758,7 +758,6 @@ footer ul:first-of-type li:nth-of-type(6) ul li {
   font-size: 1em;
   border-bottom: 1px solid;
   display: inline-block;
-  border-bottom: 1px solid black;
   padding-bottom: 2px;
   font-family: var(--font-p);
 }
@@ -830,6 +829,43 @@ details {
   padding-bottom: 3em;
   border-bottom: 1px solid var(--line-div);
   margin-bottom: 2em;
+}
+
+details ul li:last-of-type {
+  font-family: var(--font-p);
+}
+
+details:nth-of-type(2) li:first-of-type {
+  list-style-type: none;
+  margin-left: -1.7em;
+  margin-bottom: 1em;
+}
+
+details:nth-of-type(3) li {
+  list-style-type: none;
+  margin-left: -1.7em;
+}
+
+details:nth-of-type(3) li:last-of-type {
+  width: fit-content;
+  border-bottom: 1px solid;
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.pagina2-8 h3 {
+  text-transform: uppercase;
+  font-family: var(--font-h2);
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.carousel:first-of-type article h5:first-of-type {
+  margin: var(--margin-h5);
 }
 
 @media (prefers-reduced-motion: reduce) {

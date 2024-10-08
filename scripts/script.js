@@ -6,19 +6,33 @@ const ul = document.querySelector(".details");
 const ul2 = document.querySelector(".details-2");
 const ul3 = document.querySelector(".details-3");
 const tweedeNav = document.querySelector("nav:nth-of-type(2)");
-const arrow = document.querySelector(".arrow-icon");
+const arrow = document.querySelectorAll(".arrow-icon");
 
-const details = document
-  .querySelector(".details-toggle")
-  .addEventListener("toggle", function () {
-    if (arrow.classList.contains("draaiAnimatie")) {
-      arrow.classList.remove("draaiAnimatie");
-      arrow.classList.add("draaiTerugAnimatie");
+// const detailsElements = document.querySelectorAll(".detailsp2");
+
+arrow.forEach((arrow) => {
+  arrow.addEventListener("click", function () {
+    if (this.classList.contains("draaiAnimatie")) {
+      this.classList.remove("draaiAnimatie");
+      this.classList.add("draaiTerugAnimatie");
     } else {
-      arrow.classList.add("draaiAnimatie");
-      arrow.classList.remove("draaiTerugAnimatie");
+      this.classList.add("draaiAnimatie");
+      this.classList.remove("draaiTerugAnimatie");
     }
   });
+});
+
+// voor uitklappen summaries
+
+// detailsElements.forEach((details) => {
+//   details.addEventListener("click", function () {
+//     if (this.classList.contains("show")) {
+//       this.classList.remove("show");
+//     } else {
+//       this.classList.add("show");
+//     }
+//   });
+// });
 
 // array aanmaken met de 3 headers
 const sections = [
@@ -51,7 +65,11 @@ buttons.forEach((button, index) => {
       ul3.classList.toggle("show");
     }
 
-    if (ul.classList.contains("show")) {
+    if (
+      ul.classList.contains("show") ||
+      ul2.classList.contains("show") ||
+      ul3.classList.contains("show")
+    ) {
       ul.setAttribute("aria-hidden", "false");
     } else {
       ul.setAttribute("aria-hidden", "true");
