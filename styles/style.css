@@ -413,7 +413,8 @@ main section {
 }
 
 /* Hulp van Jason met code van carousel en scroll-snap */
-.carousel {
+.carousel,
+.carousel-slider {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
@@ -421,18 +422,21 @@ main section {
   position: relative;
 }
 
-.carousel article {
+.carousel article,
+.carousel-slider article {
   display: flex;
   flex-direction: column;
   min-width: 75%;
   scroll-snap-align: start;
 }
 
-.carousel article:last-of-type {
+.carousel article:last-of-type,
+.carousel-slider article:last-of-type {
   margin-right: var(--em-universeel);
 }
 
-.carousel a {
+.carousel a,
+.carousel-slider a {
   position: absolute;
   bottom: 0;
   margin: var(--em-universeel);
@@ -864,8 +868,13 @@ details:nth-of-type(3) li:last-of-type {
   margin-top: 0.5em;
 }
 
-.carousel:first-of-type article h5:first-of-type {
+.carousel:first-of-type article h5:first-of-type,
+.carousel-slider article h5:first-of-type {
   margin: var(--margin-h5);
+}
+
+.pagina2-8 button {
+  background-image: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

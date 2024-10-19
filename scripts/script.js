@@ -1,12 +1,26 @@
 // hulp chatgpt met buttons etc
 // https://chatgpt.com/share/66f8aef3-8310-8002-89ad-1c23c1328533
 
+// array aanmaken met de 3 headers
+const sections = [
+  document.querySelector(".header-1"),
+  document.querySelector(".header-2"),
+  document.querySelector(".header-3"),
+];
+
 const buttons = document.querySelectorAll("footer button");
 const ul = document.querySelector(".details");
 const ul2 = document.querySelector(".details-2");
 const ul3 = document.querySelector(".details-3");
 const tweedeNav = document.querySelector("nav:nth-of-type(2)");
 const arrow = document.querySelectorAll(".arrow-icon");
+
+const slider = document.querySelector(".carousel-slider");
+const leftButton = document.querySelector(".vorige");
+const rightButton = document.querySelector(".volgende");
+const articles = slider.querySelectorAll("article");
+
+let currentIndex = 0;
 
 // const detailsElements = document.querySelectorAll(".detailsp2");
 
@@ -33,13 +47,6 @@ arrow.forEach((arrow) => {
 //     }
 //   });
 // });
-
-// array aanmaken met de 3 headers
-const sections = [
-  document.querySelector(".header-1"),
-  document.querySelector(".header-2"),
-  document.querySelector(".header-3"),
-];
 
 const openButton = document
   .querySelector("nav button")
@@ -87,9 +94,6 @@ buttons.forEach((button, index) => {
 
 // Hulp van chatgpt, zelf verder mee gegaan en aangepast. Zie "chatgpt-bewegendeheader" voor chat gpt gesprek, alleen de eerste kwart van het gesprek is relevant / deels gebruikt.
 
-// index van array bijhouden
-let currentIndex = 0;
-
 // de tijd dat de header blijft staan aangeven
 const switchInterval = 5000;
 
@@ -124,3 +128,43 @@ function switchSection() {
 }
 
 setInterval(switchSection, switchInterval);
+
+//  hulp chatgpt bij functie https://chatgpt.com/c/671438e0-6404-8002-a44b-03ca184ace0e
+
+function updateButtonStates() {
+  if (currentIndex === 0) {
+    leftButton.disabled = true;
+  } else {
+    leftButton.disabled = false;
+  }
+
+  if (currentIndex == articles.length - 1) {
+    rightButton.disabled = true;
+  } else {
+    rightButton.disabled = false;
+  }
+}
+
+updateButtonStates();
+
+rightButton.addEventListener("click", () => {
+  if (currentIndex < articles.length - 1) {
+    currentIndex++;
+    slider.scrollTo({
+      left: slider.clientWidth * currentIndex,
+      behavior: "smooth",
+    });
+  }
+  updateButtonStates();
+});
+
+leftButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    slider.scrollTo({
+      left: slider.clientWidth * currentIndex,
+      behavior: "smooth",
+    });
+  }
+  updateButtonStates();
+});
