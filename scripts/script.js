@@ -18,7 +18,10 @@ const arrow = document.querySelectorAll(".arrow-icon");
 const slider = document.querySelector(".carousel-slider");
 const leftButton = document.querySelector(".vorige");
 const rightButton = document.querySelector(".volgende");
+
+if(slider) {
 const articles = slider.querySelectorAll("article");
+}
 
 let currentIndex = 0;
 
@@ -130,7 +133,7 @@ function switchSection() {
 setInterval(switchSection, switchInterval);
 
 //  hulp chatgpt bij functie https://chatgpt.com/c/671438e0-6404-8002-a44b-03ca184ace0e
-
+if(slider) {
 function updateButtonStates() {
   if (currentIndex === 0) {
     leftButton.disabled = true;
@@ -144,6 +147,7 @@ function updateButtonStates() {
     rightButton.disabled = false;
   }
 }
+
 
 updateButtonStates();
 
@@ -168,3 +172,4 @@ leftButton.addEventListener("click", () => {
   }
   updateButtonStates();
 });
+}
