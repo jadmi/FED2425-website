@@ -14,11 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const ul2 = document.querySelector(".details-2");
   const ul3 = document.querySelector(".details-3");
   const tweedeNav = document.querySelector("nav:nth-of-type(2)");
+
   const arrow = document.querySelectorAll(".arrow-icon");
 
   let currentIndex = 0;
-
-  // const detailsElements = document.querySelectorAll(".detailsp2");
 
   arrow.forEach((arrow) => {
     arrow.addEventListener("click", function () {
@@ -32,18 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // voor uitklappen summaries
-
-  // detailsElements.forEach((details) => {
-  //   details.addEventListener("click", function () {
-  //     if (this.classList.contains("show")) {
-  //       this.classList.remove("show");
-  //     } else {
-  //       this.classList.add("show");
-  //     }
-  //   });
-  // });
-
   const openButton = document
     .querySelector("nav button")
     .addEventListener("click", function () {
@@ -51,12 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
       tweedeNav.classList.remove("closeMenu");
     });
 
-  // const closeButton = document
-  //   .querySelector("nav:nth-of-type(2) button")
-  //   .addEventListener("click", function () {
-  //     tweedeNav.classList.remove("openMenu");
-  //     tweedeNav.classList.add("closeMenu");
-  //   });
+  const closeButton = document
+    .querySelector("nav:nth-of-type(2) button")
+    .addEventListener("click", function () {
+      tweedeNav.classList.remove("openMenu");
+      tweedeNav.classList.add("closeMenu");
+    });
 
   buttons.forEach((button, index) => {
     button.addEventListener("click", function () {
@@ -95,11 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let runCount = 0; // bijhouden hoevaak de functie is uitgevoerd
 
-  /* dit nog checken
-
-
-*/
-
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     timeoutTijd = 0;
   } else {
@@ -107,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function switchSection() {
-    if (runCount >= 2 /* || tweedeNav.classList.contains("openMenu") */) {
+    if (runCount >= 2 || tweedeNav.classList.contains("openMenu")) {
       return; // Stop de functie na 2x uitvoeren of wanneer hamburger open is
     }
 

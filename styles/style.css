@@ -36,7 +36,6 @@ video {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  /* startje */
   --color-text: #111;
   --color-buttonType1: #111;
   --color-buttonType2: #ffffff;
@@ -182,6 +181,36 @@ nav:nth-of-type(2) ul li {
   justify-content: space-between;
   padding-right: 2.15em;
 }
+
+/* nav:nth-of-type(3) ul {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-buttonType2);
+  transform: translateX(-200vw);
+}
+
+nav:nth-of-type(3) ul.openMenu {
+  animation: nav3slideInRight 0.35s forwards;
+}
+
+nav:nth-of-type(3) ul .nav3Button {
+  background-image: url("../images/pijl-right.svg");
+} */
+
+/* @keyframes nav3slideInRight {
+  from {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
 
 @keyframes slideOutRight {
   from {
@@ -913,5 +942,45 @@ details:nth-of-type(3) li:last-of-type {
   /* For desktop: */
   img {
     width: fit-content;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark light;
+  }
+  :root {
+    --color-buttonType1: #ffffff;
+  }
+
+  nav img,
+  button,
+  footer img {
+    filter: invert(1);
+  }
+
+  .header-container {
+    background-color: #111;
+  }
+
+  .header-container h2,
+  .header-container p,
+  .header-container a {
+    color: #fff;
+  }
+
+  main section:first-of-type a {
+    color: #111;
+  }
+
+  .carousel {
+    scrollbar-color: #fff #111;
+  }
+
+  footer li,
+  footer ul li:last-of-type,
+  footer ul:last-of-type li,
+  h5 {
+    color: #fff;
   }
 }
