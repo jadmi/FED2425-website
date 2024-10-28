@@ -115,8 +115,8 @@ nav img {
 }
 
 nav img:first-of-type {
-  width: 3em;
   margin-right: auto;
+  width: 3em;
 }
 
 nav button {
