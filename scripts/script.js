@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ul2 = document.querySelector(".details-2");
   const ul3 = document.querySelector(".details-3");
   const tweedeNav = document.querySelector("nav:nth-of-type(2)");
+  const derdeNav = document.querySelector("nav:nth-of-type(3)");
 
   const arrow = document.querySelectorAll(".arrow-icon");
 
@@ -43,6 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", function () {
       tweedeNav.classList.remove("openMenu");
       tweedeNav.classList.add("closeMenu");
+    });
+
+  const derdeNavButton = document
+    .querySelector("nav:nth-of-type(2) ul .navbutton")
+    .addEventListener("click", function () {
+      console.log("test");
+      derdeNav.classList.add("openMenu");
     });
 
   buttons.forEach((button, index) => {

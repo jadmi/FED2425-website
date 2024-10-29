@@ -134,6 +134,10 @@ nav button {
   margin: var(--margin-menu);
 }
 
+.closeMenu button {
+  align-self: end;
+}
+
 nav:nth-of-type(2) {
   position: fixed;
   right: 0;
@@ -145,8 +149,7 @@ nav:nth-of-type(2) {
   transform: translateX(-100vw);
 }
 
-nav:nth-of-type(2).openMenu,
-.closeMenu {
+nav:nth-of-type(2).openMenu {
   display: flex;
   align-items: start;
   animation: slideInRight 0.35s forwards;
@@ -182,7 +185,7 @@ nav:nth-of-type(2) ul li {
   padding-right: 2.15em;
 }
 
-/* nav:nth-of-type(3) ul {
+nav:nth-of-type(3) {
   position: fixed;
   right: 0;
   top: 0;
@@ -193,15 +196,13 @@ nav:nth-of-type(2) ul li {
   transform: translateX(-200vw);
 }
 
-nav:nth-of-type(3) ul.openMenu {
+nav:nth-of-type(3).openMenu {
+  display: flex;
+  align-items: start;
   animation: nav3slideInRight 0.35s forwards;
 }
 
-nav:nth-of-type(3) ul .nav3Button {
-  background-image: url("../images/pijl-right.svg");
-} */
-
-/* @keyframes nav3slideInRight {
+@keyframes nav3slideInRight {
   from {
     transform: translateX(200%);
     opacity: 0;
@@ -210,7 +211,7 @@ nav:nth-of-type(3) ul .nav3Button {
     transform: translateX(0);
     opacity: 1;
   }
-} */
+}
 
 @keyframes slideOutRight {
   from {
