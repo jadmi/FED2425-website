@@ -202,6 +202,10 @@ nav:nth-of-type(3).openMenu {
   animation: nav3slideInRight 0.35s forwards;
 }
 
+nav:nth-of-type(3) ul button {
+  background-image: url("../images/pijl-right.svg");
+}
+
 @keyframes nav3slideInRight {
   from {
     transform: translateX(200%);
