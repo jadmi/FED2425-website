@@ -46,11 +46,29 @@ document.addEventListener("DOMContentLoaded", function () {
       tweedeNav.classList.add("closeMenu");
     });
 
+  const closeButton2 = document
+    .querySelector("nav:nth-of-type(3) button")
+    .addEventListener("click", function () {
+      tweedeNav.classList.remove("openMenu");
+      tweedeNav.classList.add("closeMenu");
+      derdeNav.classList.remove("openMenu");
+      derdeNav.classList.add("closeMenu");
+    });
+
   const derdeNavButton = document
     .querySelector("nav:nth-of-type(2) ul .navbutton")
     .addEventListener("click", function () {
-      console.log("test");
       derdeNav.classList.add("openMenu");
+      derdeNav.classList.remove("closeMenu");
+    });
+
+  const terugButton = document
+    .querySelector("nav:nth-of-type(3) button:first-of-type")
+    .addEventListener("click", function () {
+      derdeNav.classList.remove("openMenu");
+      derdeNav.classList.add("closeMenu");
+      tweedeNav.classList.add("openMenu");
+      tweedeNav.classList.remove("closeMenu");
     });
 
   buttons.forEach((button, index) => {

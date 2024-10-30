@@ -77,6 +77,8 @@ video {
   --margin-navul: 1em 0em 1.5em 1.8em;
   --margin-navul: 1.5em 0em 1.5em 1.8em;
   --padding-buttonp2: 1.125em 1.5em;
+  --padding-navul: 1.5em 0 1.5em 0;
+  --pading-divul: 3em 0;
 }
 
 /****************/
@@ -143,10 +145,12 @@ nav:nth-of-type(2) {
   right: 0;
   top: 0;
   width: 80vw;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   background-color: var(--color-buttonType2);
   transform: translateX(-100vw);
+  justify-content: start;
 }
 
 nav:nth-of-type(2).openMenu {
@@ -159,7 +163,8 @@ nav:nth-of-type(2).closeMenu {
   animation: slideOutRight 0.35s backwards;
 }
 
-nav:nth-of-type(2) ul {
+nav:nth-of-type(2) ul,
+nav:nth-of-type(3) ul {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
@@ -167,7 +172,8 @@ nav:nth-of-type(2) ul {
   width: 100%;
 }
 
-nav:nth-of-type(2) ul .navbutton {
+nav:nth-of-type(2) ul .navbutton,
+nav:nth-of-type(3) ul .navbutton {
   background-image: url("../images/pijl-right.svg");
   width: var(--button);
   height: var(--button);
@@ -185,15 +191,62 @@ nav:nth-of-type(2) ul li {
   padding-right: 2.15em;
 }
 
+nav:nth-of-type(2) ul:nth-of-type(2) {
+  padding: var(--padding-navul);
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav:nth-of-type(2) img {
+  margin: 0;
+  width: auto;
+}
+
+nav:nth-of-type(2) a {
+  font-family: var(--font-a);
+  padding: var(--padding-Button);
+  justify-content: center;
+  margin: var(--margin-a);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+
+nav:nth-of-type(2) a:first-of-type {
+  color: var(--color-buttonType2);
+  background: var(--color-buttonType1);
+}
+
+nav:nth-of-type(2) a:nth-of-type(2) {
+  color: var(--color-text);
+  background: var(--color-buttonType2);
+  border: 1px solid var(--color-gray2);
+}
+
+nav:nth-of-type(2) div {
+  gap: var(--gap);
+  margin: var(--margin-navul);
+  margin-top: 0;
+}
+
+nav:nth-of-type(2) h4 {
+  font-family: var(--font-h2);
+  font-size: 1.25rem;
+  color: var(--color-gray);
+}
+
 nav:nth-of-type(3) {
   position: fixed;
   right: 0;
   top: 0;
   width: 80vw;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   background-color: var(--color-buttonType2);
   transform: translateX(-200vw);
+  justify-content: flex-start;
 }
 
 nav:nth-of-type(3).openMenu {
@@ -202,8 +255,59 @@ nav:nth-of-type(3).openMenu {
   animation: nav3slideInRight 0.35s forwards;
 }
 
+nav:nth-of-type(3).closeMenu {
+  animation: nav3slideOutRight 0.5s backwards;
+}
+
+nav:nth-of-type(3) div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+  padding-right: 1.5em;
+}
+
+nav:nth-of-type(3) div button:first-of-type {
+  background-image: url("../images/left-chevron.png");
+  width: 1.7em;
+  height: 1.7em;
+  margin: 0;
+}
+
+nav:nth-of-type(3) div button:nth-of-type(2) {
+  width: 1.3em;
+  height: 1.5em;
+  margin: var(--margin-menu);
+}
+
 nav:nth-of-type(3) ul button {
   background-image: url("../images/pijl-right.svg");
+}
+
+nav:nth-of-type(3) h2 {
+  font-size: 1.5em;
+  margin-left: 1.5em;
+  margin-top: 2em;
+  font-family: var(--font-a);
+}
+
+nav:nth-of-type(3) ul {
+  margin-top: 0;
+}
+
+nav:nth-of-type(3) ul li {
+  font-family: var(--font-h2);
+  font-size: 0.85em;
+  color: var(--color-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2.15em;
+}
+nav:nth-of-type(3) ul .navbutton {
+  height: 2.5em;
+  padding-right: 4.5em;
 }
 
 @keyframes nav3slideInRight {
@@ -214,6 +318,15 @@ nav:nth-of-type(3) ul button {
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes nav3slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200vw);
   }
 }
 
