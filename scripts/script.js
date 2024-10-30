@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   const closeButton2 = document
-    .querySelector("nav:nth-of-type(3) button")
+    .querySelector("nav:nth-of-type(3) button:last-of-type")
     .addEventListener("click", function () {
       tweedeNav.classList.remove("openMenu");
       tweedeNav.classList.add("closeMenu");
