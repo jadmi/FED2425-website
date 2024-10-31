@@ -271,5 +271,7 @@ Nb. Vermeld de bronnen ook in je code.
 11. https://web.dev/articles/prefers-reduced-motion
 12. reduced motion, aria label https://chatgpt.com/c/66fa7254-8f20-8002-94a0-07da51a161d0
 13. https://codepen.io/shooft/pen/VwJXNEg / https://chatgpt.com/c/66fb96a0-3a4c-8002-b45c-9f99aa92b5ba
+14. https://www.youtube.com/watch?v=zFFuV_vXNhY&t
+15. https://stackoverflow.com/questions/49500339/cant-prevent-touchmove-from-scrolling-window-on-ios
 
 </details>

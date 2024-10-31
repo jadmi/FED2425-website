@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const arrow = document.querySelectorAll(".arrow-icon");
 
+  const halloweenThema = document.querySelector("main section:first-of-type a");
+  const halloweenBody = document.querySelector("body");
+  halloweenThema.addEventListener("click", function () {
+    halloweenBody.classList.toggle("halloween");
+  });
+
   let currentIndex = 0;
 
   arrow.forEach((arrow) => {
@@ -32,11 +38,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  function preventScroll(event) {
+    event.preventDefault();
+  }
+
   const openButton = document
     .querySelector("nav button")
     .addEventListener("click", function () {
       tweedeNav.classList.add("openMenu");
       tweedeNav.classList.remove("closeMenu");
+      //stackoverflow.com/questions/49500339/cant-prevent-touchmove-from-scrolling-window-on-ios
+      document.addEventListener("touchmove", preventScroll, {
+        passive: false,
+      });
     });
 
   const closeButton = document
@@ -44,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", function () {
       tweedeNav.classList.remove("openMenu");
       tweedeNav.classList.add("closeMenu");
+      document.removeEventListener("touchmove", preventScroll);
     });
 
   const closeButton2 = document
@@ -53,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tweedeNav.classList.add("closeMenu");
       derdeNav.classList.remove("openMenu");
       derdeNav.classList.add("closeMenu");
+      document.removeEventListener("touchmove", preventScroll);
     });
 
   const derdeNavButton = document
