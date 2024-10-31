@@ -43,6 +43,8 @@ video {
   --color-headerTwo: #f5f5f5;
   --color-gray: #707072;
   --color-gray2: #e5e5e5;
+  --color-purple: purple;
+  --color-orange: orange;
   --padding-Section: 3em 0em 0em 1.5em;
   --padding-Sectionp2: 2em 1.5em 0em 1.5em;
   --padding-div: 5em 0em 2em 1.5em;
@@ -812,6 +814,10 @@ footer ul:first-of-type li:nth-of-type(6) ul li {
   font-weight: var(--font-weight-standaard);
 }
 
+.pagina2-1 a {
+  width: fit-content;
+}
+
 .carousel-pagina2,
 .carousel-pagina2-2 {
   display: flex;
@@ -1069,14 +1075,12 @@ details:nth-of-type(3) li:last-of-type {
 
 /* halloween styling */
 
-.halloween {
-  background-color: orange;
+.halloween,
+.halloween .header-container {
+  background-color: var(--color-orange);
 }
 
-.halloween .header-container a {
-  color: purple;
-}
-
+.halloween .header-container a,
 .halloween h1,
 .halloween h2,
 .halloween h3,
@@ -1088,8 +1092,9 @@ details:nth-of-type(3) li:last-of-type {
 .halloween footer li,
 .halloween footer li:last-of-type,
 .halloween footer ul:nth-of-type(2) li,
-.halloween nav:nth-of-type(3) ul li {
-  color: purple;
+.halloween nav:nth-of-type(3) ul li,
+.halloween .openMenu h4 {
+  color: var(--color-purple);
 }
 
 .halloween nav:first-of-type img,
@@ -1104,14 +1109,11 @@ details:nth-of-type(3) li:last-of-type {
 
 .halloween .openMenu {
   background-color: orange;
+  filter: invert(0);
 }
 
-.halloween .openMenu h4 {
-  color: purple;
-}
-
-.halloween .header-container a {
-  color: p;
+.halloween .openMenu h2 {
+  filter: invert(0);
 }
 
 .halloween section:nth-of-type(3) a,
@@ -1119,15 +1121,11 @@ details:nth-of-type(3) li:last-of-type {
 .halloween section:nth-of-type(6) a,
 .halloween section:nth-of-type(7) a {
   background-color: rgb(145, 205, 55);
-  color: white;
+  color: var(--color-buttonType2);
 }
 
 .halloween .carousel {
   scrollbar-color: purple #111;
-}
-
-.halloween .header-container {
-  background-color: orange;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1152,18 +1150,24 @@ details:nth-of-type(3) li:last-of-type {
   html {
     color-scheme: dark light;
   }
-  :root {
-    --color-buttonType1: #ffffff;
-  }
 
   nav img,
   button,
-  footer img {
+  footer img,
+  nav:nth-of-type(2) div a:nth-of-type(2),
+  nav:nth-of-type(2) ul li img,
+  nav:nth-of-type(2),
+  nav:nth-of-type(3),
+  nav:nth-of-type(3) h2,
+  .pagina2-6 p,
+  .pagina2-7 img,
+  .pagina2-5 img:first-of-type {
     filter: invert(1);
   }
 
-  .header-container {
-    background-color: #111;
+  .header-container,
+  .pagina2-8 button {
+    background-color: var(--color-text);
   }
 
   .header-container h2,
@@ -1172,8 +1176,17 @@ details:nth-of-type(3) li:last-of-type {
     color: #fff;
   }
 
-  main section:first-of-type a {
-    color: #111;
+  nav:nth-of-type(2) div a:first-of-type,
+  main section:first-of-type a,
+  nav:nth-of-type(2) {
+    color: var(--color-text);
+  }
+
+  nav:nth-of-type(2) button,
+  nav:nth-of-type(3) button,
+  .pagina2-4 button,
+  .pagina2-5 button {
+    filter: invert(0);
   }
 
   .carousel {
@@ -1183,7 +1196,13 @@ details:nth-of-type(3) li:last-of-type {
   footer li,
   footer ul li:last-of-type,
   footer ul:last-of-type li,
-  h5 {
-    color: #fff;
+  h5,
+  .pagina2-5 button:nth-of-type(2) {
+    color: var(--color-buttonType2);
+  }
+
+  .pagina2-5 button:first-of-type {
+    color: var(--color-buttonType1);
+    background-color: var(--color-buttonType2);
   }
 }
