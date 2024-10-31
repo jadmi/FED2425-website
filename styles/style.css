@@ -130,10 +130,6 @@ nav button {
   background-size: 100% 100%;
 }
 
-.openMenu {
-  opacity: 0.5;
-}
-
 .openMenu button,
 .closeMenu button {
   background-image: url("../images/cross.svg");
@@ -1185,8 +1181,12 @@ details:nth-of-type(3) li:last-of-type {
   nav:nth-of-type(2) button,
   nav:nth-of-type(3) button,
   .pagina2-4 button,
-  .pagina2-5 button {
+  .pagina2-5 button,
+  nav:nth-of-type(2) ul li img {
     filter: invert(0);
+  }
+  nav:nth-of-type(2).openMenu div a:first-of-type {
+    color: #d1d1d1;
   }
 
   .carousel {
