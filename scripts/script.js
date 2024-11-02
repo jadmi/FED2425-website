@@ -26,15 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
     halloweenBody.classList.toggle("halloween");
   });
 
-  playButton.addEventListener("click", function () {
-    if (video.paused) {
-      video.play();
-      playButton.innerHTML = "&#9208";
-    } else {
-      video.pause();
-      playButton.innerHTML = "&#9654";
-    }
-  });
+  if (video) {
+    playButton.addEventListener("click", function () {
+      if (video.paused) {
+        video.play();
+        playButton.innerHTML = "&#9208";
+      } else {
+        video.pause();
+        playButton.innerHTML = "&#9654";
+      }
+    });
+  }
 
   let currentIndex = 0;
 
