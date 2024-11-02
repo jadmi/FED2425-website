@@ -78,11 +78,11 @@ Mac toegankelijkheids test bevindingen:
 
 ### de hele pagina:
 
-  <img src="readme-images/breakdownschts.pdf" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschts-Frame1.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/breakdownschts.pdf" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschts-Frame2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
@@ -237,6 +237,7 @@ misschien toegangelijkheid++
 
 Surface plane:
 
+- Dom manipulatie
 - Header animatie
 - Light/Dark mode
 - Halloween thema
