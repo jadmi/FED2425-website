@@ -1104,7 +1104,8 @@ details:nth-of-type(3) li:last-of-type {
 .halloween footer li:last-of-type,
 .halloween footer ul:nth-of-type(2) li,
 .halloween nav:nth-of-type(3) ul li,
-.halloween .openMenu h4 {
+.halloween .openMenu h4,
+.halloween nav:nth-of-type(2) ul li {
   color: var(--color-purple);
 }
 
@@ -1113,7 +1114,12 @@ details:nth-of-type(3) li:last-of-type {
   filter: invert(1);
 }
 
-.halloween a:nth-of-type(2) {
+.halloween .video-container button {
+  filter: invert(0);
+  background-color: rgb(145, 205, 55);
+}
+
+.halloween main section:first-of-type a:nth-of-type(2) {
   background-color: rgb(145, 205, 55);
   color: white;
 }
@@ -1136,7 +1142,7 @@ details:nth-of-type(3) li:last-of-type {
 }
 
 .halloween .carousel {
-  scrollbar-color: purple #111;
+  scrollbar-color: var(--color-purple) var(--color-text);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1192,7 +1198,8 @@ details:nth-of-type(3) li:last-of-type {
     color: var(--color-text);
   }
 
-  nav:nth-of-type(2) div a:first-of-type nav:nth-of-type(2) {
+  nav:nth-of-type(2) div a:first-of-type nav:nth-of-type(2),
+  nav:nth-of-type(2) ul li {
     color: var(--color-text);
   }
 
