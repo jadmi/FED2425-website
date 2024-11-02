@@ -54,6 +54,9 @@ hier de naam van de pagina
 
 ### Bevindingen
 
+Elastiek, schokband:
+Als eerst had ik met elastiekjes om m'n vinger gedaan, en je merkt gelijk al dat alle basis dingen een stuk moeilijker zijn. Als je te snel typt gaat het al mis of als je simpel wilt swipen of klikken. Als je de tijd neemt gaat het wel wat makkelijker, dus het lukte wel alleen het duurt simpelweg een stuk langer. Met de schokband lukte het mij helemaal niet om te typen. Je kan wel de met de screenreader navigeren omdat je alleen op de toetsen hoeft te drukken.
+
 Ik heb de site als eerst met een windows screenreader getest, maar die vond ik lastig te bedienen dus verliep de test niet zo soepel. Ik ga het nog een keer testen op mac.
 
 Mac toegankelijkheids test bevindingen:
@@ -232,6 +235,17 @@ misschien toegangelijkheid++
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
+Surface plane:
+
+- Header animatie
+- Light/Dark mode
+- Halloween thema
+- Reduced motion
+- Toegangelijkheid++ (aria labels/hidden, focus, skip link)
+- Play/pause button
+
+Micro interacties: details/summaries dropdown, hamburger menu, carousel slider
+
 ### Je uitkomst - karakteristiek screenshots:
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
@@ -244,7 +258,7 @@ Korte omschrijving met plaatjes
 
 ### Dit was lastig/Is niet gelukt:
 
-- Animatie, animatie laten loopen
+- Animatie laten loopen
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -272,6 +286,8 @@ Nb. Vermeld de bronnen ook in je code.
 12. reduced motion, aria label https://chatgpt.com/c/66fa7254-8f20-8002-94a0-07da51a161d0
 13. https://codepen.io/shooft/pen/VwJXNEg / https://chatgpt.com/c/66fb96a0-3a4c-8002-b45c-9f99aa92b5ba
 14. https://www.youtube.com/watch?v=zFFuV_vXNhY&t
-15. https://stackoverflow.com/questions/49500339/cant-prevent-touchmove-from-scrolling-window-on-ios
+15. https://stackoverflow.com/questions/49500339/cant-prevent-touchmove-from-scrolling-window-on-ios\
+16. hulp met menu problemen - https://chatgpt.com/share/67262fb7-20ac-8002-b7a6-dfb21bafaaf4
+17. https://stackoverflow.com/questions/39839884/creating-a-custom-play-button-for-a-video
 
 </details>

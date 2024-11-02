@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const ul3 = document.querySelector(".details-3");
   const tweedeNav = document.querySelector("nav:nth-of-type(2)");
   const derdeNav = document.querySelector("nav:nth-of-type(3)");
+  const video = document.querySelector("video");
+  const playButton = document.querySelector(".play-button");
 
   const arrow = document.querySelectorAll(".arrow-icon");
 
@@ -22,6 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const halloweenBody = document.querySelector("body");
   halloweenThema.addEventListener("click", function () {
     halloweenBody.classList.toggle("halloween");
+  });
+
+  playButton.addEventListener("click", function () {
+    if (video.paused) {
+      video.play();
+      playButton.innerHTML = "&#9208";
+    } else {
+      video.pause();
+      playButton.innerHTML = "&#9654";
+    }
   });
 
   let currentIndex = 0;

@@ -464,6 +464,17 @@ button:focus {
   animation: slideOutLeft 0.5s forwards;
 }
 
+.video-container button {
+  background-color: var(--color-buttonType1);
+  color: var(--color-buttonType2);
+  border-radius: 10%;
+  background-image: none;
+}
+
+.video-container button:focus {
+  scale: 1;
+}
+
 main section:first-of-type {
   display: flex;
   justify-content: center;

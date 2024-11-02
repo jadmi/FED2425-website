@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateButtonStates();
 
+  //hulp slider: chatgpt (image gebruikt dus kan niet gedeeld worden)
   rightButton.addEventListener("click", () => {
     if (currentIndex < articles.length - 1) {
       currentIndex++;
