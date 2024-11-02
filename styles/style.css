@@ -1001,6 +1001,7 @@ details ul li:last-of-type {
 
 summary {
   list-style: none;
+  appearance: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1026,10 +1027,6 @@ details {
   padding-bottom: 3em;
   border-bottom: 1px solid var(--line-div);
   margin-bottom: 2em;
-}
-
-details summary {
-  list-style: none;
 }
 
 details ul li:last-of-type {
