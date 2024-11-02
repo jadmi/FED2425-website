@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentIndex = 0;
 
+  // detail animaties
   arrow.forEach((arrow) => {
     arrow.addEventListener("click", function () {
       if (this.classList.contains("draaiAnimatie")) {
@@ -50,21 +51,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // toevoeging nav geen touch scroll
   function preventScroll(event) {
     event.preventDefault();
   }
 
+  // stackoverflow.com/questions/49500339/cant-prevent-touchmove-from-scrolling-window-on-ios
   const openButton = document
     .querySelector("nav button")
     .addEventListener("click", function () {
       tweedeNav.classList.add("openMenu");
       tweedeNav.classList.remove("closeMenu");
-      //stackoverflow.com/questions/49500339/cant-prevent-touchmove-from-scrolling-window-on-ios
       document.addEventListener("touchmove", preventScroll, {
         passive: false,
       });
     });
 
+  // hamburger buttons
   const closeButton = document
     .querySelector("nav:nth-of-type(2) button")
     .addEventListener("click", function () {
@@ -142,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
     timeoutTijd = 500;
   }
 
+  // zorgt voor veranderen van headers + animaties timen
   function switchSection() {
     if (runCount >= 2 || tweedeNav.classList.contains("openMenu")) {
       return; // Stop de functie na 2x uitvoeren of wanneer hamburger open is
@@ -164,5 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, timeoutTijd);
   }
 
+  // tijd tussen switchen van headers
   setInterval(switchSection, switchInterval);
 });
