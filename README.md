@@ -253,9 +253,7 @@ Micro interacties: details/summaries dropdown, hamburger menu, carousel slider
 
 ### Dit ging goed/Heb ik geleerd:
 
-Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Het namaken van de website qua kleuren/layout ging goed, ook de carousels gingen soepel nadat de eerste mij gelukt was. Verder duurde het maken van het hamburger menu wat langer maar hier heb ik veel van geleerd, samen met de animaties die erbij komen kijken/css animaties in het algemeen. Hiervoor had ik nooit echt css animaties veel gebruikt.
 
 ### Dit was lastig/Is niet gelukt:
 
