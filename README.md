@@ -255,11 +255,16 @@ Micro interacties: details/summaries dropdown, hamburger menu, carousel slider
 
 Het namaken van de website qua kleuren/layout ging goed, ook de carousels gingen soepel nadat de eerste mij gelukt was. Verder duurde het maken van het hamburger menu wat langer maar hier heb ik veel van geleerd, samen met de animaties die erbij komen kijken/css animaties in het algemeen. Hiervoor had ik nooit echt css animaties veel gebruikt.
 
+  <img src="readme-images/IMG_2238.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/IMG_2239.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/IMG_2240.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/IMG_2241.jpg" width="375px" alt="uitomst opdracht 1">
+
 ### Dit was lastig/Is niet gelukt:
 
 - Animatie laten loopen heb ik een aantal uur aan besteed maar is helaas niet gelukt. Uiteindelijk gelaten voor wat het is (stoppen na 1x lopen en verder gegaan met andere belangrijkere dingen).
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/IMG_2243.jpg" width="375px" alt="uitomst opdracht 1">
 </details>
 
 ## Bronnenlijst

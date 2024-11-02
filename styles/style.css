@@ -1000,14 +1000,15 @@ details ul li:last-of-type {
 }
 
 summary {
-  list-style: none;
-  -webkit-appearance: none;
-  appearance: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: -2em;
   margin-bottom: -2.2em;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
 }
 
 details ul {
