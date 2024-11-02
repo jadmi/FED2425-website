@@ -464,6 +464,10 @@ button:focus {
   animation: slideOutLeft 0.5s forwards;
 }
 
+.video {
+  pointer-events: none;
+}
+
 .video-container button {
   background-color: var(--color-buttonType1);
   color: var(--color-buttonType2);
@@ -1183,9 +1187,12 @@ details:nth-of-type(3) li:last-of-type {
     color: #fff;
   }
 
-  nav:nth-of-type(2) div a:first-of-type,
-  main section:first-of-type a,
-  nav:nth-of-type(2) {
+  main section:first-of-type a:nth-of-type(2) {
+    background-color: var(--color-buttonType2);
+    color: var(--color-text);
+  }
+
+  nav:nth-of-type(2) div a:first-of-type nav:nth-of-type(2) {
     color: var(--color-text);
   }
 
