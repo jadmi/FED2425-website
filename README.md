@@ -294,5 +294,6 @@ Nb. Vermeld de bronnen ook in je code.
 15. https://stackoverflow.com/questions/49500339/cant-prevent-touchmove-from-scrolling-window-on-ios\
 16. hulp met menu problemen - https://chatgpt.com/share/67262fb7-20ac-8002-b7a6-dfb21bafaaf4
 17. https://stackoverflow.com/questions/39839884/creating-a-custom-play-button-for-a-video
+18. Verdere comments bij code met betrekking tot chatgpt in js
 
 </details>
