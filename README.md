@@ -259,6 +259,7 @@ Het namaken van de website qua kleuren/layout ging goed, ook de carousels gingen
   <img src="readme-images/IMG_2239.jpg" width="375px" alt="uitomst opdracht 1">
   <img src="readme-images/IMG_2240.jpg" width="375px" alt="uitomst opdracht 1">
   <img src="readme-images/IMG_2241.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/IMG_2244.jpg" width="375px" alt="uitomst opdracht 1">
 
 ### Dit was lastig/Is niet gelukt:
 
