@@ -257,7 +257,7 @@ Het namaken van de website qua kleuren/layout ging goed, ook de carousels gingen
 
 ### Dit was lastig/Is niet gelukt:
 
-- Animatie laten loopen
+- Animatie laten loopen heb ik een aantal uur aan besteed maar is helaas niet gelukt. Uiteindelijk gelaten voor wat het is (stoppen na 1x lopen en verder gegaan met andere belangrijkere dingen).
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>

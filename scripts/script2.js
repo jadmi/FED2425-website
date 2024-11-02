@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //  hulp chatgpt bij functie https://chatgpt.com/c/671438e0-6404-8002-a44b-03ca184ace0e
 
+  // carousel slider buttons
   function updateButtonStates() {
     if (currentIndex === 0) {
       leftButton.disabled = true;
@@ -25,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateButtonStates();
 
-  //hulp slider: chatgpt (image gebruikt dus kan niet gedeeld worden)
+  // hulp slider: chatgpt (image gebruikt dus kan niet gedeeld worden)
+  // berekent slider positie door breedte container te berekenen.
   rightButton.addEventListener("click", () => {
     if (currentIndex < articles.length - 1) {
       currentIndex++;

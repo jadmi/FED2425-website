@@ -1028,6 +1028,10 @@ details {
   margin-bottom: 2em;
 }
 
+details summary {
+  list-style: none;
+}
+
 details ul li:last-of-type {
   font-family: var(--font-p);
 }
