@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.addEventListener("touchmove", preventScroll, {
         passive: false,
       });
+      document.body.style.overflow = "hidden";
     });
 
   // hamburger buttons
@@ -76,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tweedeNav.classList.remove("openMenu");
       tweedeNav.classList.add("closeMenu");
       document.removeEventListener("touchmove", preventScroll);
+      document.body.style.overflow = "";
     });
 
   const closeButton2 = document
@@ -86,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       derdeNav.classList.remove("openMenu");
       derdeNav.classList.add("closeMenu");
       document.removeEventListener("touchmove", preventScroll);
+      document.body.style.overflow = "";
     });
 
   const derdeNavButton = document

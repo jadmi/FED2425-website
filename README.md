@@ -54,12 +54,18 @@ hier de naam van de pagina
 
 ### Bevindingen
 
+Beperkingen nabootsen:
+
 Elastiek, schokband:
 Als eerst had ik met elastiekjes om m'n vinger gedaan, en je merkt gelijk al dat alle basis dingen een stuk moeilijker zijn. Als je te snel typt gaat het al mis of als je simpel wilt swipen of klikken. Als je de tijd neemt gaat het wel wat makkelijker, dus het lukte wel alleen het duurt simpelweg een stuk langer. Met de schokband lukte het mij helemaal niet om te typen. Je kan wel de met de screenreader navigeren omdat je alleen op de toetsen hoeft te drukken.
 
+Slechtziendheid: Met het simpele zwart wit contrast was het navigeren nog wel te doen met de speciale bril. Het is even wennen maar het lukte wel.
+
 Ik heb de site als eerst met een windows screenreader getest, maar die vond ik lastig te bedienen dus verliep de test niet zo soepel. Ik ga het nog een keer testen op mac.
 
-Mac toegankelijkheids test bevindingen:
+Screenreader - Mac
+
+Opmerkingen
 
 - Skip link naar main content
 - Focus state op anchors, blauwe border, kan beter, mogelijk voor contrast? - - Focus state matcht niet persee website visueel gezien
@@ -183,6 +189,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+Voor eigen website:
 
 - Alle images hebben alt tekst, image wordt dus voorgelezen
 - Screenreader werkt goed, iconen hebben ook een beschrijving, je kan door alles tabben.
