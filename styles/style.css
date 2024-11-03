@@ -1115,7 +1115,10 @@ details:nth-of-type(3) li:last-of-type {
 .halloween footer ul:nth-of-type(2) li,
 .halloween nav:nth-of-type(3) ul li,
 .halloween .openMenu h4,
-.halloween nav:nth-of-type(2) ul li {
+.halloween nav:nth-of-type(2) ul li,
+.pagina2-5 img:first-of-type,
+.pagina2-6 p:first-of-type,
+.pagina2-6 p:nth-of-type(2) {
   color: var(--color-purple);
 }
 
@@ -1139,7 +1142,9 @@ details:nth-of-type(3) li:last-of-type {
   filter: invert(0);
 }
 
-.halloween .openMenu h2 {
+.halloween .openMenu h2,
+.pagina2-6 p:first-of-type,
+.pagina2-6 p:nth-of-type(2) {
   filter: invert(0);
 }
 
@@ -1153,6 +1158,18 @@ details:nth-of-type(3) li:last-of-type {
 
 .halloween .carousel {
   scrollbar-color: var(--color-purple) var(--color-text);
+}
+
+.halloween .slider-buttons button {
+  background-color: var(--color-purple);
+  color: var(--color-buttonType2);
+  filter: invert(0);
+}
+
+.halloween .slider-buttons button:disabled {
+  background-color: #f7f6f6;
+  color: #d1d0d0;
+  filter: invert(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1199,7 +1216,9 @@ details:nth-of-type(3) li:last-of-type {
 
   .header-container h2,
   .header-container p,
-  .header-container a {
+  .header-container a,
+  .size-grid button,
+  .slider-buttons button {
     color: #fff;
   }
 
