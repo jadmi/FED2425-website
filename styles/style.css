@@ -1116,9 +1116,9 @@ details:nth-of-type(3) li:last-of-type {
 .halloween nav:nth-of-type(3) ul li,
 .halloween .openMenu h4,
 .halloween nav:nth-of-type(2) ul li,
-.pagina2-5 img:first-of-type,
-.pagina2-6 p:first-of-type,
-.pagina2-6 p:nth-of-type(2) {
+.halloween .pagina2-5 img:first-of-type,
+.halloween .pagina2-6 p:first-of-type,
+.halloween .pagina2-6 p:nth-of-type(2) {
   color: var(--color-purple);
 }
 
@@ -1143,8 +1143,8 @@ details:nth-of-type(3) li:last-of-type {
 }
 
 .halloween .openMenu h2,
-.pagina2-6 p:first-of-type,
-.pagina2-6 p:nth-of-type(2) {
+.halloween .pagina2-6 p:first-of-type,
+.halloween .pagina2-6 p:nth-of-type(2) {
   filter: invert(0);
 }
 
