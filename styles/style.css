@@ -1079,6 +1079,7 @@ details:nth-of-type(3) li:last-of-type {
   background: var(--color-gray2);
   border-radius: 50%;
   font-size: 1.1em;
+  color: var(--color-buttonType1);
 }
 
 .slider-buttons {
@@ -1086,7 +1087,6 @@ details:nth-of-type(3) li:last-of-type {
   gap: 0.5em;
   margin-bottom: 1em;
   justify-content: right;
-  color: var(--color-buttonType1);
 }
 
 /* halloween styling */
