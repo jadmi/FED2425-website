@@ -1110,7 +1110,7 @@ details:nth-of-type(3) li:last-of-type {
 .halloween h6,
 .halloween p,
 .halloween li,
-.halloween footer li,
+.halloween footer ul:first-of-type li,
 .halloween footer li:last-of-type,
 .halloween footer ul:nth-of-type(2) li,
 .halloween nav:nth-of-type(3) ul li,
@@ -1123,7 +1123,8 @@ details:nth-of-type(3) li:last-of-type {
 }
 
 .halloween nav:first-of-type img,
-.halloween nav:first-of-type button {
+.halloween nav:first-of-type button,
+.halloween footer button {
   filter: invert(1);
 }
 
